@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google/maps": "^0.5.5",
+    "axios": "^0.18.0",
     "knex": "^0.15.2",
     "mysql": "^2.16.0",
     "restify": "^7.2.3"
