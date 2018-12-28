@@ -18,28 +18,30 @@
 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
-                <li  class="nav-item ">
-                    <a class="nav-link" id='salvar' href="#">Salvar
+                <li id="salva-local" class="nav-item">
+                    <a class="nav-link" href="#">Salvar local
                         
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="carregar" href="#">Carregar</a>
+                <li id="carrega-local" class="nav-item">
+                    <a class="nav-link" href="#">Carregar Local</a>
                 </li>
                 <li id="limpar" class="nav-item">
-                    <a class="nav-link" href="#">Limpar</a>
+                    <a class="nav-link" href="#">Limpar Local</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="games.html">Ver jogos</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" id="jogadorX" placeholder="Jogador X">
-                <input class="form-control mr-sm-2" type="text" id="jogadorO" placeholder="Jogador 0">
-                <button id='salvarImg' style='display: none'class="btn btn-secondary my-2 my-sm-0" type="submit">Salvar</button>
-            </form>
+            <div class="form-inline my-2 my-lg-0">
+                <input id="jogador-x" class="form-control mr-sm-2" type="text" placeholder="Jogador X">
+                <input id="jogador-o" class="form-control mr-sm-2" type="text" placeholder="Jogador 0">
+                <button id="salvar" style="display: none;" class="btn btn-secondary my-2 my-sm-0" type="submit">Salvar</button>
+            </div>
         </div>
-        <div id="modal"></div>
+
+        <div id="modais"></div>
+
     </nav>
 
     <div id="velha" class="velha">
@@ -63,7 +65,9 @@
         </div>
 
     </div>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

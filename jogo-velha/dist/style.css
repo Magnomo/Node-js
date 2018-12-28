@@ -1,81 +1,94 @@
-body,html{
+body, html{
     height: 100%;
+
 }
+
 body{
     display: flex;
-    justify-content:  center;
-    align-items:  center;
+    justify-content: center;
+    align-items: center;
+    background: rgb(13, 128, 182);
 
-    background: rgba(13,128,182,0.9);
 }
-.velha{
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.velha {
     display: flex;
     justify-content: center;
 }
-.velha .coluna{
-display: flex;
-flex-direction: column;
-border-right: 3px solid white;
+
+.velha .coluna {
+    display: flex;
+    flex-direction: column;
+    border-right: 3px solid white;
 }
-.velha .coluna:last-child{
-    border:none;
+
+.velha .coluna:last-child {
+    border: none;
 }
-.velha .quadro{
+
+.velha .quadro {
     width: 125px;
     height: 125px;
     border-bottom: 3px solid white;
-    color:#e4e4e4;
-    font-size:5em;
+    color: #e4e4e4;
+    font-size: 5em;
     font-weight: 100;
     text-align: center;
 }
-.velha .quadro:last-child{
-    border:none;
-}
-.fixed{
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
 
+.velha .quadro:last-child {
+    border: none;
 }
+
 span{
     user-select: none;
     margin: 0;
 }
-#modal{
+
+#modais {
     position: absolute;
     margin: 130px auto;
     font-family: inherit;
     z-index: 3;
 }
-.modalClass{
-    background: rgba(219,225,100,1);
+
+.modalClass {
+    background: wheat;
     width: 200px;
     padding: 20px;
     display: block;
     margin-bottom: 10px;
     animation-name: aparecer;
     animation-duration: 0.4s;
-
 }
-.remover{
+
+.remover {
     animation: desaparecer .4s;
     animation-fill-mode: forwards;
+
 }
-@keyframes aparecer{
-    from{
-        opacity: 0;
+
+@keyframes aparecer {
+    from {
+        opacity: 0
     }
-    to{
-        opacity: 1;
+    to {
+        opacity: 1
     }
 }
-@keyframes desaparecer{
-    50%{
-       transform: translateX(5%)
+
+@keyframes desaparecer {
+    50% {
+        transform: translateX(5%);
     }
-    100%{
+    100% {
         transform: translateX(-200%);
     }
 }

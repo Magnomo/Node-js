@@ -1,0 +1,3 @@
+Antes de usar o projeto, não se esqueça de gerar o banco de dados com o arquivo db.sql
+
+Logo em seguida, acesse o terminal e execute o comando npm install
