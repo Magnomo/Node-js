@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <script src="dom2image.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Jogo da Velha</title>
 </head>
 
@@ -16,7 +18,7 @@
 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
+                <li  class="nav-item ">
                     <a class="nav-link" id='salvar' href="#">Salvar
                         
                     </a>
@@ -24,8 +26,8 @@
                 <li class="nav-item">
                     <a class="nav-link" id="carregar" href="#">Carregar</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                <li id="limpar" class="nav-item">
+                    <a class="nav-link" href="#">Limpar</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
@@ -34,9 +36,10 @@
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" id="jogadorX" placeholder="Jogador X">
                 <input class="form-control mr-sm-2" type="text" id="jogadorO" placeholder="Jogador 0">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Salvar</button>
+                <button id='salvarImg' style='display: none'class="btn btn-secondary my-2 my-sm-0" type="submit">Salvar</button>
             </form>
         </div>
+        <div id="modal"></div>
     </nav>
 
     <div id="velha" class="velha">
